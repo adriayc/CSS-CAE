@@ -18,3 +18,24 @@ div p {
 div p a {
 	color: red;
 }
+
+/*Selector de clase*/
+/*
+- Se puede repetirse (muchos elementos pueden tener la misma clase)
+*/
+.grande {
+	font-size: 28px;
+}
+.rojo {
+	color: red;
+}
+
+/*Selector de id*/
+/*
+- No puede repetirse (solo existe un id por elemnto)
+- No usar cuando se trabaja con CSS
+- Debe ser usado solo con JavaScript
+*/
+/*#rojo {
+	color: red;
+}*/
