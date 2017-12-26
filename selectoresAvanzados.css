@@ -1,0 +1,32 @@
+/*Selector de hijos*/
+/*
+Seleccionamos un p que este directamente dentro de un div
+*/
+div > p {
+	font-size: 20px;
+}
+
+/*Selector de atributos*/
+input[type] {
+
+}
+
+/*Selector de atributo valor*/
+input[type="text"] {
+
+}
+
+/*Selector de herencia*/
+/*
+Permite que los elementos hijos hereden del padre, a menos que los elementos definan
+su propio estilo css.
+*/
+body {
+	font-size: 20px;
+	color: blue;
+}
+
+article {
+	font-size: 16px;
+	color: black;
+}
