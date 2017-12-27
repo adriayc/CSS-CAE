@@ -1,0 +1,54 @@
+/*
+Familia de la fuente:
+font-family: Arial, Sans-serif, Helvetica, "Times New Roman";
+
+Tamanio de la fuente:
+font-size: 20px;
+
+Estilo de la fuente:
+font-style: normal | italic;
+
+Peso de la fuente:
+font-weight: normal | bold;
+
+Color del texto:
+color: #4281ed;
+
+Alineacion de texto: 
+text-align: left | center | justify | right;
+
+Decoracion de texto: 
+text-decoration: underline | line-throught | none;
+
+Transformacion de texto:
+text-transform: uppercase | lowercase | capitalize;
+
+Espacion entre letra:
+letter-spacing: 2px;
+
+Alto entre linea:
+line-height: 20px;
+*/
+
+body {
+	font-family: Arial, Sans-serif, Helvetica;
+}
+
+p {
+	text-align: justify;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	line-height: 30px;
+}
+
+h1 {
+	font-family: "Times New Roman", Arial;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: normal;
+
+	color: #4281ed;
+	text-align: left;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
