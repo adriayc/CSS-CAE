@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #000;
+	font-family: arial;
+	line-height: 22px;
+}
+
+.caja {
+	background: #0353a4;
+	width: 200px;
+	/*Normalmento cuando se trabaja con cajas no se coloca el alto*/
+	/*height: 200px;*/
+
+	/*Margin - margen externo (margen del borde a otro elemento)*/
+	margin: 20px;
+	/*margin: 20px 0px;*/
+	/*margin: 20px 10px 5px 0px;*/
+
+	/*margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 0px;*/
+
+	/*Padding - margen interno (margen del contenido al borde)*/
+	/*padding: 20px;*/
+	/*padding: 20px 0px;*/
+	/*padding: 20px 10px 5px 0px;*/
+
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+
+	/*Borde de un elemento*/
+	border: 10px solid #000;
+}
+
+.caja p {
+	background: #eee5e9;
+}
