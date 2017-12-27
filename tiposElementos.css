@@ -1,0 +1,48 @@
+/*
+- Elementos de tipo bloque (Contenedores) - Abarcan todo el ancho de la pagina
+	div, article, section, header, footer, aside, table, p, video, ul, ol, 
+	h1, h2, h3, h4, h5 ,h6.
+	* Por defecto - display: block;
+	* Los elementos de tipo bloque podemos agregar:
+		- padding, width, height
+	* No pueden tener otro elemento a su lado apesar de que haya espacio.
+
+- Elemento de tipo linea - Solo abarcan el espacio del texto
+	a, span, img, b, i, small, cite, code, em, strong, br, script, button, 
+	input, label, select, textarea.
+	* Por defecto - display: inline;
+	* A los elementos de tipo linea no se le puede definir:
+		- padding, width, height
+*/
+
+/*
+diplay: inline | inline-block | block | flex;
+*/
+
+body {
+	background: #f2f2f2;
+	font-family: arial;
+	/*color: #fff;*/
+}
+
+/*Elementos de tipo bloque*/
+h1, p, div {
+	background: #ccc;
+	padding: 10px;
+	width: 500px;
+
+	/*Convertir un elemento de tipo block a inline-block*/
+	display: inline-block;
+}
+
+/*Elementos de tipo linea*/
+a {
+	background: #000;
+	color: #fff;
+
+	/*Convierte un elemento de tipo linea a inline-block*/
+	display: inline-block;
+	padding: 10px;
+	width: 150px;
+	height: 50px;
+}
