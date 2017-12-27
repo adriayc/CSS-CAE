@@ -1,0 +1,33 @@
+/*
+Decoracion de texto:
+text-decoration: underline | line-through | none;
+*/
+
+a {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+/*Peudoclases*/
+
+/*Enlace sin visitar*/
+a:link {
+	text-decoration: none;
+}
+
+/*Enlace visitado*/
+a:visited {
+	color: #ccc;
+}
+
+/*Estado del enlace mientras se pasa el mouse*/
+a:hover {
+	background: #f9a03f;
+	color: #fff;
+}
+
+/*Estado del enlace mientras se le esta haciendo clic*/
+a:active {
+	text-decoration: underline;
+	color: yellow;
+}
