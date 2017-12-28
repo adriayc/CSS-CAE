@@ -1,0 +1,51 @@
+/*
+Bordes:
+	border: 1px [solid | dotted | dashed | douuble] #000;
+
+	- Primer valor: el tamanio del borde.
+	- Segundo valor: el tipo de borde.
+		* solid: borde de una linea
+		* dotted: borde de puntos
+		* dashed: borde de rayas
+		* double: dorde de dos lineas
+	- Tercer valor: color del borde.
+
+Borde redondeado:
+	border-radius: 20px;	//Borde del 20px a los 4 lados
+	border-radius: 0px 5px 10px 15px;
+	- Convierte cajas cuadras a redondos
+	border-radius: 100%;
+*/
+
+div {
+	background: #226fc1;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	display: inline-block;
+}
+
+.caja1 {
+	border: 7px solid #000;
+	border-radius: 20px;
+}
+.caja2 {
+	border: 7px dotted #000;
+	border-radius: 0px 10px 30px 50px;
+}
+.caja3 {
+	border: 7px dashed #000;
+	border-radius: 0px 10px 0px 10px;
+}
+.caja4 {
+	border: 7px double #000;
+
+	/*Bordes que normalmente no se usan*/
+	/*border: 7px groove #000;*/
+	/*border: 7px ridge #000;*/
+	/*border: 7px inset #000;*/
+	/*border: 7px outset #000;*/
+
+	/*Solo funciona con cajas cuadradas*/
+	border-radius: 100%;
+}
