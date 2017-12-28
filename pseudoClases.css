@@ -1,0 +1,72 @@
+/*
+Pseudo-Clases:
+ * Cuando pasamos el mouse sobre el elemento
+ 	a: hover {  }
+ 
+ * Selecciona la primera linea del parrafo
+ 	div p:first-line { } 
+
+ * Selecciona el segundo elemento
+ 	div p:nth-child(2) { }
+*/
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+a {
+	background: #4357ad;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+
+	display: inline-block;
+	padding: 20px 30px;
+}
+
+/*Pseudo-Clases*/
+
+/*Cuando pasamos el mouse sobre el enlace*/
+a:hover {
+	background: #00ddcc;
+	padding: 25px 35px;
+}
+
+/*Cuando se presiona elementos se activa*/
+a:active {
+	background: #000;
+}
+
+/*Cuando el enlace fue visitado*/
+/*a:visited {
+	background: #ccc;
+}*/
+
+/*Cuando el enlace no fue visitado*/
+/*a:link {
+	background: #0080ff;
+}*/
+
+div {
+	width: 500px;
+}
+
+/*Cuando el mouse pasa sobre el parrafo*/
+div p:hover {
+	background: #000;
+	color: #fff;
+}
+
+/*Selecciona la primera linea de cada parrafo*/
+div p:first-line {
+	background: #3a3a3a;
+	color: #fff;
+	font-size: 20px;
+}
+
+/*Selecciona el segundo elemento p*/
+div p:nth-child(2) {
+	background: #009ddc;
+	color: #fff;
+	padding: 10px;
+} 
