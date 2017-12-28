@@ -1,0 +1,31 @@
+/*
+Quitar el espacio que genera las imagenes
+vertical-align: top;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #000500;
+}
+
+.galeria {
+	width: 100%;
+}
+
+.galeria img {
+	/*Quita el espacio que genera la imagen*/
+	vertical-align: top;
+	width: 350px;	/*A las imagenes solo se debe colocar el ancho*/
+	margin: 20px;
+	padding: 5px;
+	border: 1px solid #484848;
+	opacity: 0.5;	/*Establece la opacidad (0 tatalmente transparente y 1 color solido)*/
+}
+.galeria img:hover {
+	border: 1px solid #fff;
+	opacity: 1;
+}
