@@ -1,0 +1,85 @@
+/*
+display: inline | block | none | inline-block | flex;
+Otros valores para la propiedad display:
+[table | inline-table | table-row-group | table-header-group | table-footer-group |
+table-row | table-column-group | table-column | table-cell | table-caption]
+
+Elimina un elemento, quitando el espacio que ocupa.
+display: none;
+
+Oculta un elemento, pero sin quitar el espacio que ocupa.
+visibility: hidden;
+
+Oculta el contenido sobrante u oculta el contenido y agrega un scroll al contenedor.
+overflow: hidden | auto;
+
+Soluciona el problema del posicionamiento float, agregando al contenedor padre.
+overflow: hidden;
+
+La propiedad z-index permite que el elemento con mayor orden este al frente
+z-index: 10;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial, sans-serif;
+	background: #f2f2f2;
+}
+
+div, a{
+	background: #ccc;
+}
+
+a {
+	/*Elimina el elemento*/
+	/*display: none;*/
+	/*Oculta el elemnto*/
+	/*visibility: hidden;*/
+	background: #246eb9;
+	color: #fff;
+
+	display: inline-block;
+	padding: 20px;
+}
+
+.caja {
+	width: 200px;
+	height: 200px;
+	background: #4fb560;
+	color: #000;
+	margin: 20px 0px;
+	/*Oculta todo el contenido sobrante*/
+	/*overflow: hidden;*/
+	/*Oculta el contenido sobrante y agrega un scroll*/
+	overflow: auto;
+}
+
+.contenedor {
+	width: 600px;
+	background: #ccc;
+	margin: 20px 0px;
+
+	overflow: hidden;
+}
+.izquierda { float: left; }
+.derecha { float: right; }
+
+.contenedor2 .caja {
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+.azul {
+	background: #009ddc;
+	z-index: 10;
+}
+.gris {
+	background: #32021f;
+	left: 50px;
+	bottom: 80px;
+	z-index: 9;
+}
