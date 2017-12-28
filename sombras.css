@@ -1,0 +1,33 @@
+/*
+Sombras para textos:
+	text-shadow: 2px 3px 10px #000;
+
+	- primer valor: posicion horizontal de izquierda a derecha de la sombra.
+	- segundo valor: posicion vertical de arriva hacia abajo de la sombra;
+	- tercer valor: tamanio de la sombra (entre menor sea el valor mas solida es la sombra);
+	- cuarto valor: color de la sombra;
+	
+	*No es recomendable poner sobras a textos.
+
+Sombras para contenedores:
+	box-shadow: 2px 3px 10px #000;
+*/
+
+.texto {
+	/*text-shadow: 2px 3px 20px #000;*/
+
+	color: #fff;
+	text-shadow: 2px 1px 10px blue;
+}
+
+.caja {
+	width: 200px;
+	height: 200px;
+	background: #f79256;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+
+	/*Para dar soporte a distintos navegadores (antiguamente)*/
+	/*-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+}*/
