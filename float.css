@@ -1,0 +1,63 @@
+/*
+Propiedad que se agrega al contenedor padre, para solucionar el problema de float.
+	overflow: hidden;
+
+- La propiedad float se creo para poner texto alrededor de la imagen.
+float: left | right;
+
+- Float no se creo para maquetar sitios web.
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: arial;
+}
+
+.caja-padre {
+	background: #2e294a;
+	width: 700px;
+
+	/*SEGUNDA FORMA*/
+	overflow: hidden;
+}
+
+.caja {
+	background: #0e6ba8;
+	width: 200px;
+	height: 200px;
+	font-size: 38px;
+	color: #fff;
+	margin: 20px;
+}
+
+/*Cuando usamos float la caja padre se esconde*/
+.uno {
+	float: left;
+}
+
+.dos {
+	float: right;
+}
+
+/* PRIMERA FORMA:
+* Aniadimos un caja (div) con la clase 'clear'.
+* Usamos la propiedad clear con su valor both para solucionar el problema.
+*/
+/*.clear {
+	clear: both;
+}*/
+
+.articulo {
+	background: #ccc;
+	width: 800px;
+}
+
+.articulo img {
+	float: left;
+	margin: 10px;
+}
