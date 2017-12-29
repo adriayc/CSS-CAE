@@ -1,0 +1,27 @@
+body {
+	font-family: arial, sans-serif;
+}
+
+table {
+	border-collapse: collapse; 	/*Unifica los bordes dobles a uno solo*/
+	width: 500px;
+	text-align: center;		/*Alinea el texto al centro*/
+}
+
+table, th, td {
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
+th, td {
+	padding: 10px 20px;
+}
+
+th {
+	background: #009ddc;
+	color: #fff;
+}
+
+/*Pseudo-clase para la fila*/
+tr:hover {
+	background: #e5e5e5;
+}
