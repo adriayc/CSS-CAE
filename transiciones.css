@@ -1,0 +1,39 @@
+/*
+transition: [all | backgroud] 1s [ease | linear | ease-in | ease-out | ease-in-out];
+ Explicacion de los valores:
+	* Aplicar transicion a las propiedades
+		- all: a todas las propiedades.
+		- background: solo al fondo.
+	* Tiempo de transicion
+	 	- .3 : es el timpo estandar de transicion.
+
+ 	* Velocidad de curva
+ 		- ease: inicio lento, despues rapido y termina lento.
+ 		- liner: misma velocidad de inicio a fin.
+ 		- ease-in: inicio lento.
+ 		- ease-out: final lento.
+ 		- ease-int-out: inicio lento y final lento
+*/
+
+.caja {
+	background: #21295c;
+	width: 200px;
+	height: 200px;
+
+	/*Transicion solo para el fondo*/
+	/*transition: background 1s ease;*/
+	transition: all .3s ease;	/*Velocidad standar de transicion es .3s*/
+	/*transition: all 3s linear;*/
+	/*transition: all 3s ease-in;*/
+	/*transition: all 3s ease-out;*/
+	/*transition: all 3s ease-int-out;*/
+
+	/*Retardo antes de la transicion*/
+	/*transition-delay: 2s;*/
+}
+
+.caja:hover {
+	background: #9eb3c2;
+	width: 400px;
+	/*transform: rotate(180deg);*/	/*Rotamos el elemento*/
+}
