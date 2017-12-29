@@ -1,0 +1,45 @@
+/*Definimos un keyframes llamado colores*/
+@keyframes colores {
+	/*Definir fondo con from y to*/
+	/*from { background: #9EB3C2; }
+	to { background: #21295c; }*/
+
+	/*Definir con porcentaje*/
+	0% { background: #9EB3C2; }
+	25% { background: #1C7293; width: 300px; }
+	50% { background: #065A82; width: 400px; }
+	75% { background: #1B3B6F; width: 300px; }
+	100% { background: #9EB3C2; width: 200px; }
+}
+
+@keyframes movimiento {
+	/*from { transform: translate(0px); }
+	to { transform: translate(500px); }
+*/
+	0% { transform: translate(0px); }
+	50% { transform: translate(500px); }
+	100% { transform: translate(0px); }
+}
+
+.caja {
+	width: 200px;
+	height: 200px;
+	background: #9EB3C2;
+	
+	/*LLamamos a la animacion*/
+	/*animation-name: colores;*/
+	animation-name: movimiento;
+	/*Duracion de la animacion*/
+	animation-duration: 5s;
+	/*Iteracion continua de forma infinita de la animacion*/
+	animation-iteration-count: infinite;
+
+	/*Animacion en una linea
+	 - Primer valor: nombre de la animacion.
+	 - Segundo valor: tiempo de duracion.
+	 - Tercer valor: velociadad de curva.
+	 - Iteracion inifinita de la animacion. 
+	*/
+
+	animation: movimiento 10s ease infinite;
+}
