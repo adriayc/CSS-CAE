@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	/*Permite que el ancho incluya el padding y el borde*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: arial, sans-serif;
+}
+
+.contenedor {
+	width: 1000px;
+	background: #ccc;
+	/*margin: 20px;*/
+	/*Para centrar el contenedor horizontalmente*/
+	margin: 20px auto;
+
+	/*Otra solucion para solucionar el float*/
+	/*overflow: hidden;*/
+}
+
+header {
+	background: #30323d;
+	color: #fff;
+	padding: 20px;
+}
+
+.main {
+	background: #fff;
+	padding: 20px;
+	/*width: 700px;*/
+	width: 70%;
+
+	float: left;
+}
+
+aside {
+	background: #e8c547;
+	color: #fff;
+	padding: 20px;
+	/*width: 300px;*/
+	width: 30%;
+
+	float: left;
+}
+
+footer {
+	background: #4d5061;
+	padding: 20px;
+	color: #fff;
+	
+	/*Para solucionar el problema del float para que abarque el 100%*/
+	clear: both;
+}
