@@ -1,0 +1,58 @@
+/*
+Estilo de una lista desordenadas (graficos)
+	list-style: disc | circle | square | none;
+	- disc: lista con un punto negro relleno
+	- circle: lista con circulo sin relleno
+	- square: lista con un cudrado negro relleno 
+	- none: Elimina el estilo de la lista;
+
+    * Personalizar el check de una lista desordenada, descargar de www.flaticon.com
+    list-style-image: url('img/check.png');
+
+Estilo de una lista ordenada (numericos)
+	list-style: decimal | decimal-leading-zero | lower-roman | 
+				upper-roman | lower-latin | upper-latin;
+
+Elimina el espacio que genera la lista
+	padding: 0;
+*/
+
+body {
+	font-family: arial;
+}
+
+/*Eliminar los estilos de la lista desordenada y ordenada*/
+/*ul, ol {
+	list-style: none;
+	padding: 0px;
+}*/
+
+ul {
+	/*list-style: square;*/
+	list-style-image: url('img/tick.png');
+}
+
+ol {
+	list-style: upper-latin;
+}
+
+/*Menu*/
+.menu {
+	background: #4357ad;
+	width: 200px;
+	list-style: none;	/*Eliminamos las vinietas de las listas*/
+	padding: 0;		/*Elimina el espacio que genera la lista*/
+	text-align: center;
+}
+.menu li {
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.menu li a {
+	color: #fff;
+	text-decoration: none;	/*Eliminamos la decoracion del texto*/
+	display: block;		/*Convertimos el enlace a tipo bloque*/
+	padding: 15px;
+}
+.menu li a:hover {
+	background: #4888d6;
+}
