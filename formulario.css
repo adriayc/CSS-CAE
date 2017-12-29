@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	/*Esta propiedad permite que el padding y border de ese 
+	elemento no incremente su ancho*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: arial, sans-serif;
+}
+
+.formulario {
+	background: #fff;
+	width: 500px;
+	/*Establece margen de arriba y abajo, y centra horizontalmente*/
+	margin: 20px auto; 
+	/*margin: 20px;*/
+	padding: 20px;
+	border-radius: 5px;
+}
+.formulario input {
+	display: block;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border: 1px solid #226fc1;
+
+	font-family: arial;
+	font-size: 16px;
+}
+
+.formulario textarea {
+	/*Ancho minimo y maximo para no cambiar el ancho establecido*/
+	min-width: 100%;
+	max-width: 100%;
+	/*Alto minimo*/
+	min-height: 120px;
+	/*Alto maximo*/
+	max-height: 300px;
+}
+
+/*Cuando esten seleccionados (estado focus)*/
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus {
+	/*Quita el focus por defeto de chrome*/
+	outline: none;
+	border: 2px solid #4fb560;
+}
+
+input[type="submit"] {
+	width: 200px;
+	background: none;	/*Quitamos el color por default*/
+	margin: 0px auto;	/*Para centrar horizontalmente*/
+	padding: 10px;
+	border: 1px solid #4fb560;
+	border-radius: 3px;
+	color: #4fb560;
+	font-size: 16px;
+	cursor: pointer;	/*Cambiar el cursor del mouse*/
+}
+
+.formulario input[type="submit"]:hover {
+	background: #4fb560;
+	color: #fff;
+}
