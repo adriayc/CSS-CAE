@@ -1,0 +1,43 @@
+/*
+transform: translate() | scale() | rotate() | skew();
+
+Cosas que podemos hacer con la propiedad transform
+	- translate(): Transladar elementos (pixeles: 10px)
+	- scale(): Escalar elementos (numeros: 1, 1.5, 2,..)
+	- rotate(): Rotar elementos (grados: 180deg)
+	- skew(): Sesgar elementos (grados: 10deg)
+
+* Esta propiedad no sirve para posicionar elementos
+*/
+
+.caja {
+	background: #ffaa5a;
+	width: 200px;
+	height: 200px;
+	
+	/*TRANSLADAR*/
+	/*Translada 200px a la derecha y 50px hacia abajo*/
+	/*transform: translate(200px, 50px);*/
+	/*Translada en el eje X*/
+	/*transform: translateX(300px);*/
+	/*Translada en el eje Y*/
+	/*transform: translateY(300px);*/
+
+	/*ESCALANDO*/
+	/*Escala un elemento (agrandar)*/
+	/*transform: scale(1.1, 1.1);*/
+
+	/*ROTAR*/
+	/*Rotar un elemento en grados*/
+	/*transform: rotate(10deg);*/
+
+	/*SESGAR*/
+	/*Sesgar un elemento en grados*/
+	/*transform: skew(20deg, 0deg);*/
+
+	/*Toda la propiedad transform en una linea*/
+	transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+	/*Soporte para navegadores*/
+	-webkit-transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+	-moz-transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+}
