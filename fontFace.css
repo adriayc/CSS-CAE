@@ -1,0 +1,47 @@
+/*
+Fuentes personalizables:
+	1. Ir a la pagina y descargar una fuente.
+		* https://font.google.com (Recomendado) 
+		* https://www.fontsquirrel.com
+	2. Copiar en diretorio fonts
+	3. Creamos las fuentes con @font-face {}
+	4. LLamamos la fuente siempre en comillas dobles.
+
+	Otra forma:
+	1. Ir a las paginas de fuentes.
+	2. Seleccionar un fuente y personlizar.
+	3. Copiar el link de la fuente antes de nuestros estilos CSS.
+	4. Copiar y pegar la familia de la fuente en nuestro estilos CSS.
+*/
+
+/*Segunda Forma: descagando las fuentes*/
+@font-face {
+	/*Nombre de la familia de la fuente*/
+	font-family: "RobotoSlab";
+	/*Direccion donde se ubica la fuente*/
+	src: url('fonts/RobotoSlab-Regular.ttf');
+}
+@font-face {
+	font-family: "RobotoSlab-Bold";
+	src: url('fonts/RobotoSlab-Bold.ttf');
+}
+@font-face {
+	font-family: "RobotoSlab-Light";
+	src: url('fonts/RobotoSlab-Light.ttf');
+}
+@font-face {
+	font-family: "RobotoSlab-Thin";
+	src: url('fonts/RobotoSlab-Thin.ttf');
+}
+
+body {
+	/*Llamamos a la familia de la fuente siempre el nombre entre parentesis*/
+	/*font-family: "RobotoSlab";*/
+	/*font-family: "RobotoSlab-Bold";*/
+
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 { font-weight: normal; }
+/*LLamamos al peso de la fuente personalizable*/
+p { font-weight: 700; }
