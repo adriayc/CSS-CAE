@@ -1,0 +1,48 @@
+
+/*Selecciona la primera letra de cada parrafo*/
+p::first-letter {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/*Selecciona la primera linea del parrafo*/
+p::first-line {
+	background: #cf5c35;
+	line-height: 40px;
+}
+
+/*Cuando seleccionamos el texto cambia a otro color*/
+*::selection {
+	background: #f9a03f;
+}
+/*Soporte para mozilla*/
+*::-moz-selection {
+	background: #f9a03f;
+}
+
+.caja {
+	background: #f9a03f;
+	width: 150px;
+	height: 150px;
+}
+
+/*Agreamos contenido antes de la caja*/
+.caja::before {
+	content: 'Contenido antes de la caja';
+	display: block;
+	background: #3a3a3a;
+	color: #fff;
+	/*position: relative;
+	left: 50px;*/
+}
+
+/*Agregamos contenido despues de la caja*/
+.caja::after {
+	content: '';
+	background: #000;
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: relative;
+	left: 200px;
+}
