@@ -1,0 +1,146 @@
+/*
+Flexbox es un conjunto de propiedades que nos permiten distribuir nuestros elementos de
+una forma flexible para mejores layout/platillas o disenio mas facilmente.
+
+Para utlizar flexbox necesitamos un contenedor padre que tenda elementos hijos. Ya que a
+estos son los que se haran flexibles.
+
+Flexbox se divide en 2 grupos de propiedades:
+	- Propiedades para los elementos padre.
+	- Propiedades para los elementos hijos.
+
+
+---------------------------------
+PROPIEDADES DEL CONTENEDOR PADRE
+---------------------------------
+- display: flex;
+	Nos permite habilitar que los elementos hijos sean flexibles.
+
+- flex-direction: row | row-reverse | column | column-reverse;
+	Nos permite ordenar los elementos por fila o columna.
+
+- flex-wrap: no-wrap | wrap | wrap-reverse;
+ 	Permite que los elementos se ajusten o no al ancho del padre.
+
+- flex-flow: <flex-direction> || flex-wrap;
+	Es un atajo de flex-direction y flew-wrap.
+
+- justify-content: flex-start | flex-end | center | space-between | space-around;
+	Ajusta los elmentos horizontalmente.
+
+- align-items: flex-start | flex-end | center | stretch | baseline;
+	Ajusta los elementos verticalmente (Si existe 1 fila de elementos).
+
+- align-content: flex-start | flex-end | center | stretch | space-between | space-around;
+	Ajusta los elmentos verticalmente (Si existe mas de 1 fila de elementos).
+	IMPORTANTE: Esta propiedad solo funciona cuando hay mas de una linea de elementos.
+
+
+----------------------------------
+PROPIEDADES DE LOS ELEMENTOS HIJO
+----------------------------------
+- order: ;
+
+- flex-grow: ;
+	Acepta un numero que servira de proporcion para hacer crecer el elemento en relacion a los otros.
+
+	Si todo los elementos tienen flex-grow 1 el espacion restante se distribuira entre los elementos.
+
+- flex-shrink: ;
+	Define la habilidad de un elemento para hacerse mas pequenio.
+
+	Por defecto todos se pueden hacer mas pequenios pero si le ponemos flex-shrink 0 el elmento no podra ser mas pequenio que su ancho especificado.
+
+- flex-basic: ;
+	Nos permite especificar el valor inicial que tendra un elemento.
+
+- flex: 1 1 auto;
+	Es un atajo para flex-grow, flex-shrink y flex-basic.
+
+- align-self: auto | flex-start | flex-end | center | baseline | stretch;
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: arial;
+}
+
+.contenedor {
+	width: 80%;
+	max-width: 700px;
+	height: 500px;
+	background: #212d40;
+
+	/*HABILITAMOS FLEXBOX*/
+	display: flex;
+
+	/*ORDENAR LOS ELEMNTOS UNO A CONTINUACION DEL OTRO*/
+	/*Ordena horizontalmente (por defecto)*/
+	flex-direction: row;
+	/*flex-direction: row-reverse;*/
+	/* Ordena verticalmente */
+	/*flex-direction: column;*/
+	/*flex-direction: column-reverse;*/
+
+	/*AJUSTA LE ANCHO DE LOS ELEMENTOS */
+	/*Los elementos son distribuidos en una sola linea, ajustando su ancho dinamicamente (por defecto)*/
+	/*flex-wrap: nowrap;*/
+	/*Los elementos son colocados en varias lienas, manteniendo su ancho*/
+	flex-wrap: wrap;
+	/*flex-wrap: wrap-reverse;*/
+
+	/*ATAJO*/
+	/*Permite ingresar el flex-direction y flex-wrap*/
+	/*flex-flow: row wrap;*/
+
+	/*AJUSTA EL CONTENIDO HORIZONTALMENTE (SI EXISTE 1 LINEA DE ELEMENTO)*/
+	/*justify-content: flex-start;*/
+	/*justify-content: flex-end;*/
+	/*justify-content: center;*/
+	justify-content: space-between;
+	/*justify-content: space-around;*/
+
+	/*AJUSTAR EL CONTENIDO VERTICALMENTE*/
+	/*align-items: flex-start;*/
+	/*align-items: flex-end;*/
+	/*align-items: center;*/
+	/*El elemento hijo no debe tener definido el alto*/
+	/*align-items: stretch;*/
+	/*Alinea los elementos segun la fuentes en una linea*/
+	align-items: baseline;
+
+	/*AJUSTAR EL CONTENIDO VERTICALMENTE (SI EXISTE MAS DE 1 LINEA DE ELEMENTOS)*/
+	/*align-content: flex-start;*/
+	/*align-content: flex-end;*/
+	/*align-content: center;*/
+	/*align-content: space-between;*/
+	align-content: space-around;
+
+	/*OTRA OPCION PARA AJUSTAR ELEMENTOS*/
+	/*float: left;*/
+}
+
+.caja {
+	width: 100px;
+	height: 100px;
+	background: #f79256;
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	margin: 20px;
+	padding: 20px;
+}
+
+/*.dos {
+	font-size: 70px;
+}*/
