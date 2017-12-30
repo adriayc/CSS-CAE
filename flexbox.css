@@ -39,25 +39,28 @@ PROPIEDADES DEL CONTENEDOR PADRE
 ----------------------------------
 PROPIEDADES DE LOS ELEMENTOS HIJO
 ----------------------------------
-- order: ;
+- order: <numero>;
+	Cambia el orden de los elementos segun el numero que le asignemos .
 
-- flex-grow: ;
+- flex-grow: <numero>;
 	Acepta un numero que servira de proporcion para hacer crecer el elemento en relacion a los otros.
 
-	Si todo los elementos tienen flex-grow 1 el espacion restante se distribuira entre los elementos.
+	Si todo los elementos tienen flex-grow 1 el espacio restante se distribuira entre los elementos.
 
-- flex-shrink: ;
+- flex-shrink: <numero>;
 	Define la habilidad de un elemento para hacerse mas pequenio.
 
-	Por defecto todos se pueden hacer mas pequenios pero si le ponemos flex-shrink 0 el elmento no podra ser mas pequenio que su ancho especificado.
+	Por defecto todos se pueden hacer mas pequenios pero si le ponemos flex-shrink 0 el elemento no podra 
+	ser mas pequenio que su ancho especificado.
 
-- flex-basic: ;
+- flex-basic: 200px;
 	Nos permite especificar el valor inicial que tendra un elemento.
 
 - flex: 1 1 auto;
 	Es un atajo para flex-grow, flex-shrink y flex-basic.
 
 - align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	Ajusta un elemento verticalmente al alto del padre.
 */
 
 
@@ -117,14 +120,14 @@ body {
 	/*El elemento hijo no debe tener definido el alto*/
 	/*align-items: stretch;*/
 	/*Alinea los elementos segun la fuentes en una linea*/
-	align-items: baseline;
+	/*align-items: baseline;*/
 
 	/*AJUSTAR EL CONTENIDO VERTICALMENTE (SI EXISTE MAS DE 1 LINEA DE ELEMENTOS)*/
 	/*align-content: flex-start;*/
 	/*align-content: flex-end;*/
-	/*align-content: center;*/
+	align-content: center;
 	/*align-content: space-between;*/
-	align-content: space-around;
+	/*align-content: space-around;*/
 
 	/*OTRA OPCION PARA AJUSTAR ELEMENTOS*/
 	/*float: left;*/
@@ -132,6 +135,7 @@ body {
 
 .caja {
 	width: 100px;
+	/*width: 150px;*/
 	height: 100px;
 	background: #f79256;
 	color: #fff;
@@ -139,8 +143,68 @@ body {
 	font-size: 40px;
 	margin: 20px;
 	padding: 20px;
+
+	/*CAMBIAR EL ORDEN*/
+	/*Cambia el orden de los elementos*/
+	/*order: 1;*/
+
+	/*AGRANDAR UN ELEMENTO*/
+	/*Permite que el elemento crezca en relacion a otro, pero si 
+	sobrepasa su ancho se pone abajo y ocupa todo el espacio*/
+	flex-grow: 1;
+
+	/*ACHICAR UN ELEMENTO*/
+	/*Permite que el elemento se haga mas pequenio, si se pone el valor de 0 el elemento 
+	no podra ser mas pequenio que su ancho*/
+	flex-shrink: 1;
+
+	/*ATAJO*/
+	/*Atajo para el flex-shrink, flex-grow y el tamanio*/
+	flex: 1 1 auto;
+
+	/*PERMITE QUE UN ELEMENTO OCUPE TODO EL ALTO DEL PADRE*/
+	/*align-self: auto;*/
 }
 
-/*.dos {
-	font-size: 70px;
+/*.uno {
+	order: 3;
+	flex-grow: 1;
+}*/
+.dos {
+	/*width: 200px;*/
+
+	/*ORDEN DEL ELEMENTO*/
+	/*order: 2;*/
+
+	/*CUAN GRANDE SE HARA EL ELEMENTO EN RELACIO A OTROS*/
+	/*flex-grow: 2;*/
+
+	/*CUAN PEQUENIO SE HARA EL ELEMENTO EN RELACION A OTROS*/
+	/*flex-shrink: 0;*/
+
+	/*ESTABLECE EL VALOR INICIAL DE UN ELEMENTO*/
+	/*Permite el valor inicial que tendra el elemento, 
+	similar a poner su ancho*/
+	/*flex-basis: 200px;*/
+
+	/*ATAJO*/
+	/*Atajo para el flex-shrink, flex-grow y el tamanio*/
+	/*flex: 1 1 auto;*/
+
+	/*PERMITE QUE UN ELEMENTO OCUPE TODO EL ALTO DEL PADRE*/
+	/*Establecer un alto al contenedor padre para que funcione*/
+	/*align-self: auto;*/
+	/*align-self: flex-start;*/
+	/*align-self: flex-end;*/
+	/*align-self: center;*/
+	/*Centra segun la fuente del elemento, casi nunca se usa*/
+	/*align-self: baseline;*/
+	/*Permite que el elemento ocupe todo el ancho del padre, 
+	para eso es necesario colocar el alto automatico*/
+	align-self: stretch;
+	height: auto;
+}
+/*.tres {
+	order: 1;
+	flex-grow: 1;
 }*/
